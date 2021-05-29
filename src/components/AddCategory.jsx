@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import SearchIcon from './SearchIcon';
 
 const AddCategory = ({ setCategories }) => {
   const [inputValue, setInputValue] = useState('');
@@ -19,7 +20,9 @@ const AddCategory = ({ setCategories }) => {
     <form onSubmit={handleSubmit} className='search-box'>
       <input type='text' value={inputValue} onChange={handleInputChange} />
       <div className='icon'>
-        <i>i</i>
+        <i>
+          <SearchIcon />
+        </i>
       </div>
     </form>
   );
