@@ -19,11 +19,11 @@ const AddCategory = ({ setCategories }) => {
   return (
     <form onSubmit={handleSubmit} className='search-box'>
       <input type='text' value={inputValue} onChange={handleInputChange} />
-      <div className='icon'>
+      <button type='submit' className='icon'>
         <i>
           <SearchIcon />
         </i>
-      </div>
+      </button>
     </form>
   );
 };
