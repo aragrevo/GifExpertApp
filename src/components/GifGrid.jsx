@@ -12,7 +12,7 @@ const GifGrid = ({ category }) => {
         <h3>{category}</h3>
       </div>
       {loading && <Loading />}
-      <div className='row'>
+      <div className='photo-grid-container'>
         {gifs.map((gif) => (
           <GifGridItem key={gif.id} {...gif} />
         ))}
