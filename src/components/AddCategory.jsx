@@ -16,8 +16,11 @@ const AddCategory = ({ setCategories }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className='search-box'>
       <input type='text' value={inputValue} onChange={handleInputChange} />
+      <div className='icon'>
+        <i>i</i>
+      </div>
     </form>
   );
 };

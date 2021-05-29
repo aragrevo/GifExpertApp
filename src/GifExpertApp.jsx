@@ -12,7 +12,7 @@ const GifExpertApp = ({ defaultCategories = [] }) => {
           <h2>GifExpertApp</h2>
         </div>
       </div>
-      <div>
+      <div className='section-category'>
         <AddCategory setCategories={setCategories} />
       </div>
       <hr />
