@@ -152,3 +152,33 @@ body {
 .overlay h4 {
   color: #ffffff;
 }
+
+.section-loading {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 500ms;
+}
+
+.loading {
+  border-radius: 100px;
+  outline: none;
+  border: 2px solid transparent;
+  width: 50px;
+  height: 50px;
+  border-left: 2px solid #6930c3;
+  border-bottom: 2px solid #6930c3;
+  animation: spin 2s 500ms infinite forwards;
+}
+
+@keyframes spin {
+  80% {
+    border: 2px solid transparent;
+    border-left: 2px solid #6930c3;
+  }
+  100% {
+    transform: rotate(1080deg);
+    border: 2px solid #6930c3;
+  }
+}
