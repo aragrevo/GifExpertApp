@@ -102,6 +102,11 @@ body {
   background: #8256c9;
 }
 
+.search-box .icon i {
+  width: 40px;
+  display: flex;
+}
+
 .gallery-item {
   flex: 0 0 33.33%;
   max-width: 33.33%;
