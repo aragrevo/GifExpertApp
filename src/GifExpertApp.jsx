@@ -6,16 +6,22 @@ const GifExpertApp = ({ defaultCategories = [] }) => {
   const [categories, setCategories] = useState(defaultCategories);
 
   return (
-    <>
-      <h2>GifExpertApp</h2>
-      <AddCategory setCategories={setCategories} />
+    <div className='container'>
+      <div className='row'>
+        <div className='section-title'>
+          <h2>GifExpertApp</h2>
+        </div>
+      </div>
+      <div>
+        <AddCategory setCategories={setCategories} />
+      </div>
       <hr />
-      <ol>
+      <div>
         {categories.map((category) => (
           <GifGrid key={category} category={category} />
         ))}
-      </ol>
-    </>
+      </div>
+    </div>
   );
 };
 

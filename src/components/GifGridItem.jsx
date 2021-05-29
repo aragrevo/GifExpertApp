@@ -3,9 +3,13 @@ import React from 'react';
 
 const GifGridItem = ({ title, url }) => {
   return (
-    <div>
-      <img src={url} alt={title} />
-      <p>{title}</p>
+    <div className='gallery-item'>
+      <div className='gallery-item-inner'>
+        <img src={url} alt={title} />
+        <div className='overlay'>
+          <h4>{title}</h4>
+        </div>
+      </div>
     </div>
   );
 };

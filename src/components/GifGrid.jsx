@@ -7,9 +7,11 @@ const GifGrid = ({ category }) => {
   const { data: gifs, loading } = useFetchGifs(category);
   return (
     <>
-      <h3>{category}</h3>
+      <div className='section-title'>
+        <h3>{category}</h3>
+      </div>
       {loading && <p>Loading</p>}
-      <div>
+      <div className='row'>
         {gifs.map((gif) => (
           <GifGridItem key={gif.id} {...gif} />
         ))}
